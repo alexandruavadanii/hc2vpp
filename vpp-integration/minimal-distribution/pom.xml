@@ -75,6 +75,8 @@
       <!-- Bgp modules disabled by default, because it BGP northbound interface is not enabled by default -->
       // io.fd.hc2vpp.bgp.inet.BgpInetModule
       // io.fd.hc2vpp.bgp.prefix.sid.BgpPrefixSidModule
+      io.fd.honeycomb.tutorial.Module
+      io.fd.honeycomb.lcmapi.Module
     </distribution.modules>
   </properties>
 
@@ -195,6 +197,16 @@
     <dependency>
       <groupId>io.fd.hc2vpp.ipsec</groupId>
       <artifactId>ipsec-impl</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>io.fd.honeycomb.common</groupId>
+      <artifactId>sample-plugin-impl</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>io.fd.honeycomb.lcmapi</groupId>
+      <artifactId>stream-count-impl</artifactId>
       <version>${project.version}</version>
     </dependency>
   </dependencies>
